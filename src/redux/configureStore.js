@@ -1,11 +1,11 @@
 import { configureStore, applyMiddleware } from '@reduxjs/toolkit';
 import thunk from 'redux-thunk';
-import clubsReducer from './reducers/chessReducer';
+import gamesReducer from './reducers/gamesReducer';
 
 const store = configureStore(
   {
     reducer: {
-      clubs: clubsReducer,
+      games: gamesReducer,
     },
   },
   applyMiddleware(thunk),
