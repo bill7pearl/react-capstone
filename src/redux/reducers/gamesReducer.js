@@ -2,7 +2,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 
 const FETCH_GAMES = 'FETCH_GAMES';
 const initialState = {
-  games: [],
+  game: [],
 };
 const options = {
 	method: 'GET',
@@ -25,6 +25,7 @@ const getGames = async () => {
     description: item.short_description,
     publisher: item.publisher,
     releaseDate: item.release_date,
+    genre: item.genre,
   }));
   return games;
 };

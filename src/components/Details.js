@@ -6,31 +6,35 @@ function GameDetails() {
   const { gameName } = useParams();
 
   const games = useSelector((state) => state.games.game);
-  const game = games.find((item) => item.title === gameName);
+  const game = games ? games.find((item) => item.title === gameName):[];
   return (
     <main>
       <ul>
         {games && (
           <>
-            <li>
-              <img src={game.image} alt={game.title} />
-            </li>
+             <li>
+              <img src={game?.image} alt={game?.title} />
+            </li> 
             <div>
               <li>
                 Name:
-                {game.title}
+                {game?.title}
               </li>
               <li>
                 Description:
-                {game.description}
+                {game?.description}
               </li>
               <li>
                 Publisher:
-                {game.publisher}
+                {game?.publisher}
+              </li>
+              <li>
+                genre:
+                {game?.genre}
               </li>
               <li>
                 Release date:
-                {game.releaseDate}
+                {game?.releaseDate}
               </li>
             </div>
           </>
