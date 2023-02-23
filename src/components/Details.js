@@ -8,39 +8,35 @@ function GameDetails() {
   const games = useSelector((state) => state.games.game);
   const game = games ? games.find((item) => item.title === gameName):[];
   return (
-    <main>
-      <ul>
+    <main className="game-detail-container">
         {games && (
-          <>
-             <li>
-              <img src={game?.image} alt={game?.title} />
-            </li> 
-            <div>
-              <li>
+          <>    
+             <h3 className="details-title">
                 Name:
-                {game?.title}
-              </li>
-              <li>
+                <span className="details-content"> {game?.title}</span>
+              </h3>     
+              <img src={game?.image} alt={game?.title} /> 
+            <div className="game-details">
+              <h3 className="details-title">
                 Description:
-                {game?.description}
-              </li>
-              <li>
+                <span className="details-content"> {game?.description}</span>
+              </h3>
+              <h3 className="details-title">
                 Publisher:
-                {game?.publisher}
-              </li>
-              <li>
+                <span className="details-content"> {game?.publisher}.</span>
+              </h3>
+              <h3 className="details-title">
                 genre:
-                {game?.genre}
-              </li>
-              <li>
+                <span className="details-content"> {game?.genre}.</span>
+              </h3>
+              <h3 className="details-title">
                 Release date:
-                {game?.releaseDate}
-              </li>
+                <span className="details-content"> {game?.releaseDate}.</span>
+              </h3>
             </div>
           </>
         )}
         {!game && <p>No Games are Found!</p>}
-      </ul>
     </main>
   );
 }

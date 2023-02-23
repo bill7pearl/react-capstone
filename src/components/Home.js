@@ -26,10 +26,10 @@ const Home = () => {
       <main className="games">
         <input type="text"  value={gameInput} placeholder="Search your game by name.." onChange={searchGame}/>
             {filteredGames.map((game) => (
-            <div className="mainContainer" key={game.id}>
+            <div className="single-game" key={game.id}>
               <Link to={`/Details/${game.title}`}>
                 <img className="img-api" src={game.image} alt={game.title} />
-                <p>{game.title}</p>
+                <p className="game-title">{game.title}</p>
               </Link>
             </div>
           ))} 

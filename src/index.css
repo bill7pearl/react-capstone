@@ -7,17 +7,108 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: black;
 }
 
-img {
+.back-arrow {
+  list-style: none;
+  color: red;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+}
+
+.logo-img {
+  width: 45px;
+  height: 40px;
+}
+
+.settings-img {
   width: 25px;
   height: 25px;
 }
 
+
+.settings {
+  color: red;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+  border-color: red;
+  border-radius: 5px;
+  color: red;
+}
+
+.games {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+
+.single-game {
+  background-color: black;
+}
+
+.game-title {
+  margin-top: 0;
+  cursor: pointer;
+}
+
 .img-api {
-  width: 300px;
+  padding: 5px;
+  width: 400px;
   height: 300px;
+  align-self: center;
+}
+
+.game-detail-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+}
+
+.game-details {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.details-title {
+  color: red;
+}
+
+.details-content {
+  color: black;
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 780px) {
+  .games {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .single-game {
+    flex-basis: 32%;
+    border-radius: 5px;
+  }
+
+  input {
+    flex-basis: 100%;
+  }
 }
