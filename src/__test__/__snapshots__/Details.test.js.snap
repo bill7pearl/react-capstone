@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<main>
+  <ul>
+    <li>
+      <img />
+    </li>
+    <div>
+      <li>
+        Name:
+      </li>
+      <li>
+        Description:
+      </li>
+      <li>
+        Publisher:
+      </li>
+      <li>
+        genre:
+      </li>
+      <li>
+        Release date:
+      </li>
+    </div>
+    <p>
+      No Games are Found!
+    </p>
+  </ul>
+</main>
+`;
