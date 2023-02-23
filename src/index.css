@@ -52,11 +52,15 @@ input {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
+  padding: 5px;
 }
 
 .single-game {
   background-color: black;
+  border-radius: 5px;
 }
 
 .game-title {
@@ -65,9 +69,9 @@ input {
 }
 
 .img-api {
-  padding: 5px;
-  width: 400px;
-  height: 300px;
+  padding: 10px;
+  width: 380px;
+  height: 290px;
   align-self: center;
 }
 
