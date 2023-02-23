@@ -6,10 +6,10 @@ import GameDetails from './components/Details';
 function App() {
   return (
     <div className="App">
-       <BrowserRouter>
+      <BrowserRouter>
         <Nav />
         <Routes>
-          <Route path="/" element={<Home/>} />
+          <Route path="/" element={<Home />} />
           <Route path="/details/:gameName" element={<GameDetails />} />
         </Routes>
       </BrowserRouter>

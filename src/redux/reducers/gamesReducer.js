@@ -5,15 +5,15 @@ const initialState = {
   game: [],
 };
 const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'd6dc14e952msh45ef0c6ddd6c0eap192b42jsn2847d28df369',
-		'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com'
-	}
+  method: 'GET',
+  headers: {
+    'X-RapidAPI-Key': 'd6dc14e952msh45ef0c6ddd6c0eap192b42jsn2847d28df369',
+    'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com',
+  },
 };
 
 fetch('https://free-to-play-games-database.p.rapidapi.com/api/games', options)
-	.then(response => response.json())
+  .then((response) => response.json());
 
 const getGames = async () => {
   const res = await fetch('https://free-to-play-games-database.p.rapidapi.com/api/filter?tag=3d.mmorpg.fantasy.pvp&platform=pc', options);
@@ -29,7 +29,6 @@ const getGames = async () => {
   }));
   return games;
 };
-
 
 export const fetchGames = createAsyncThunk(
   FETCH_GAMES,
