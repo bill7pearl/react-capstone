@@ -57,10 +57,10 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
- ### [Live Demo](https://book-store-1ok9.onrender.com/)
+ ### [Live Demo](https://freetoplaygames.onrender.com)
 
 ## Project demo
->
+### [Project demo] (https://www.loom.com/share/f29d57fffb3e44058b60714c5435e031)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
