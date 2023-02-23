@@ -1,9 +1,8 @@
 <a name="readme-top"></a>
 
 <div align="center">
-
   <h1><b>FREE TO PLAY API</b></h1>
-
+  <img src="gameapi.png" alt="app_screenshot">
 </div>
 
 # 📗 Table of Contents
