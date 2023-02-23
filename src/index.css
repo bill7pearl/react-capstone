@@ -48,9 +48,17 @@ a {
   color: red;
 }
 
-input {
+.input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   padding: 10px;
-  margin: 10px;
+  margin: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
   border-color: red;
   border-radius: 5px;
   color: red;
@@ -58,29 +66,37 @@ input {
 
 .games {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   text-align: center;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  padding: 5px;
+  gap: 1px;
 }
 
 .single-game {
   background-color: black;
   border-radius: 5px;
+  flex-basis: 40%;
 }
 
 .game-title {
   margin-top: 0;
   cursor: pointer;
+  height: 15px;
 }
 
 .img-api {
-  padding: 10px;
-  width: 380px;
-  height: 290px;
+  padding: 5px;
+  width: 170px;
+  height: 110px;
+  margin: 0;
   align-self: center;
+}
+
+.title-in-home {
+  margin: 0;
+  padding: 0;
 }
 
 .game-detail-container {
@@ -106,13 +122,18 @@ input {
   font-size: 0.9rem;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 680px) {
   .games {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+  }
+
+  .img-api {
+    width: 250px;
+    height: 180px;
   }
 
   .single-game {

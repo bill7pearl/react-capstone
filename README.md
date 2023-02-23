@@ -149,7 +149,8 @@ Feel free to check the [issues page](../../issues/).
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Without Microverse Help this project not compleated at all so thanks a lot Microverse for giving us this kind of opertunity.
+> Without Microverse Help this project would not be completed so thanks a lot Microverse for giving me this opportunity.
+> I also I would like to thank Nelson Sakva for Original Design Official [Behance](https://www.behance.net/) Page point_right [@NelsonSakva](https://www.behance.net/sakwadesignstudio).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
