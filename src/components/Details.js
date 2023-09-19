@@ -8,7 +8,7 @@ function GameDetails() {
   const games = useSelector((state) => state.games.game);
   const game = games ? games.find((item) => item.title === gameName) : [];
   return (
-    <main className="game-detail-container">
+    <main className="container mx-auto">
       {games && (
       <>
         <h3 className="details-title">
