@@ -12,7 +12,7 @@ function GameDetails() {
       {games && (
       <>
         <h3 className="details-title">
-          Name:
+          Name::
           <span className="details-content">
             {' '}
             {game?.title}
